@@ -1,0 +1,18 @@
+{
+  "name": "comp2068week3",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Bloodham <bloodham25@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

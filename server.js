@@ -1,12 +1,16 @@
 /// <reference path="_reference.ts" />
 var express = require('express');
+var path = require('path');
 var app = express();
 var port = process.env.port || 3000;
+//Route for main page
 app.get('/', function (req, res) {
-    res.send('Hello Express!');
+    //res.send('Hello Express!');
+    res.sendFile(path.join(__dirname, "Public", "index.html"));
 });
+//Route for Info page
 app.get('/info', function (req, res) {
-    res.send('Your Custon Info Page goes here');
+    res.sendFile(path.join(__dirname, "Public", "index.html"));
 });
 app.listen(port, function () {
     console.log("App Server Started...On port:" + port);
